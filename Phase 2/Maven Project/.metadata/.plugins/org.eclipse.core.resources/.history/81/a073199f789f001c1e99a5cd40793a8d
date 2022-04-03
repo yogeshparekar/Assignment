@@ -1,0 +1,57 @@
+package com;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Configuration con = new Configuration();
+		con.configure("hibernate.cfg.xml");
+		SessionFactory sf = con.buildSessionFactory();
+		Session session =sf.openSession();
+		Transaction tran = session.getTransaction();
+		
+		//Trainer record Insert
+//		Trainer t = new Trainer();
+//		t.setTid(2);
+//		t.setTname("Raju");
+//		t.setTech("Python");
+//		tran.begin();
+//			session.save(t);
+//		tran.commit();
+//		System.out.println("Trainer Recoded Saved...");
+	
+		//Student record Insert
+//		Student s = new Student();
+//		s.setSid(103);
+//		s.setSname("Nikhil");
+//		s.setAge(25);
+//		s.setTsid(2);
+//		tran.begin();
+//			session.save(s);
+//		tran.commit();
+//		System.out.println("Student Record Saved..");
+
+		Trainer t = new Trainer();
+		t.setTid(3);
+		t.setTname("Ajay");
+		t.setTech("Angular");
+		
+		List<Student> listOfStd = new ArrayList<Student>();
+		Student s1 = new Student(104,"Shejal",26,3);
+		Student s2 = new Student(105,"Sagar",27,3);
+		t.setListOfStudent(null);
+		tran.begin();
+			session.save(t); 	//only save trainer
+		tran.commit();
+		System.out.println("Trainer Recoded Saved...");
+	}
+
+}

@@ -1,0 +1,14 @@
+INDEX VERSION 1.4+E:\phase2 web projets using jee\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2711631584.index
+4242763872.index
+1457144655.index
+2153799997.index
+2694525399.index
+2241491924.index
+1790612228.index
+3452124308.index
+2841403949.index
+607105449.index
+278588680.index
+4275566579.index
+871366536.index

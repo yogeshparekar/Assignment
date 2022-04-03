@@ -1,0 +1,8 @@
+package com;
+
+public class Trainer {
+private int tid;
+private String tname;
+private String tech;
+
+}

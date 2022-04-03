@@ -1,0 +1,9 @@
+package com.resource;
+
+import org.hibernate.SessionFactory;
+
+public class DbResource {
+	public static SessionFactory getSessionFactory() {
+		
+	}
+}

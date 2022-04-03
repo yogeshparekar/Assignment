@@ -1,0 +1,21 @@
+package com.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.resource.DbResource;
+
+public class EmployeeDao {
+
+	public int storeEmployeeDetails(Employee emp) {
+		try {
+			SessionFactory sf = DbResource.getSessionFactory();
+			Session session = sf.openSession();
+			Transaction tran = session.getTransaction();
+			tran.begin();
+				session.save(emp);
+				tran.commit();
+		}
+	}
+}

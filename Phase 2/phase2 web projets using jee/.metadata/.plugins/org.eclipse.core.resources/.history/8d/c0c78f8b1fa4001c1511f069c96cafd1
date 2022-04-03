@@ -1,0 +1,15 @@
+package com.service;
+
+import com.bean.Employee;
+import com.dao.EmployeeDao;
+
+public class EmployeeService {
+
+	public String storeEmployee(Employee emp) {
+		EmployeeDao ed = new EmployeeDao();
+		if(ed.storeEmployeeDetails(emp)>0) {
+			return "Record stored succesfully"
+		}
+	}
+	}
+

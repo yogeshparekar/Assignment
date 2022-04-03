@@ -1,0 +1,16 @@
+127.0.0.1 - - [20/Mar/2022:10:22:37 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [20/Mar/2022:10:22:38 +0530] "GET /Employee_Management_System_Using_MVC/ HTTP/1.1" 200 659
+0:0:0:0:0:0:0:1 - - [20/Mar/2022:10:22:38 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [20/Mar/2022:10:22:51 +0530] "GET /Employee_Management_System_Using_MVC/EmployeeController HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [20/Mar/2022:10:22:51 +0530] "GET /Employee_Management_System_Using_MVC/EmployeeController HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [20/Mar/2022:10:22:54 +0530] "GET /Employee_Management_System_Using_MVC/display.jsp HTTP/1.1" 200 1631
+127.0.0.1 - - [20/Mar/2022:12:24:58 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [20/Mar/2022:12:24:59 +0530] "GET /Employee_Management_System_Using_MVC/ HTTP/1.1" 200 659
+0:0:0:0:0:0:0:1 - - [20/Mar/2022:12:25:23 +0530] "POST /Employee_Management_System_Using_MVC/EmployeeController HTTP/1.1" 200 687
+0:0:0:0:0:0:0:1 - - [20/Mar/2022:12:25:29 +0530] "GET /Employee_Management_System_Using_MVC/EmployeeController HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [20/Mar/2022:12:25:29 +0530] "GET /Employee_Management_System_Using_MVC/display.jsp HTTP/1.1" 200 1631
+0:0:0:0:0:0:0:1 - - [20/Mar/2022:12:25:33 +0530] "GET /Employee_Management_System_Using_MVC/display.jsp HTTP/1.1" 200 1631
+0:0:0:0:0:0:0:1 - - [20/Mar/2022:12:25:38 +0530] "GET /Employee_Management_System_Using_MVC/ HTTP/1.1" 200 659
+0:0:0:0:0:0:0:1 - - [20/Mar/2022:12:25:41 +0530] "GET /Employee_Management_System_Using_MVC/EmployeeController HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [20/Mar/2022:12:25:41 +0530] "GET /Employee_Management_System_Using_MVC/display.jsp HTTP/1.1" 200 1631
+0:0:0:0:0:0:0:1 - - [20/Mar/2022:12:25:46 +0530] "GET /Employee_Management_System_Using_MVC/index.jsp HTTP/1.1" 200 659

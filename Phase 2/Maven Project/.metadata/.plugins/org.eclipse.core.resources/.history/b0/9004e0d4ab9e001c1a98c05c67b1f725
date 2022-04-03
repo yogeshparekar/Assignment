@@ -1,0 +1,14 @@
+package com;
+
+import org.hibernate.cfg.Configuration;
+
+public class DemoTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Configuration con = new Configuration();
+		con.configure("hibernate.cfg.xml");
+		System.out.println("File Loaded Succesfully");
+	}
+
+}
