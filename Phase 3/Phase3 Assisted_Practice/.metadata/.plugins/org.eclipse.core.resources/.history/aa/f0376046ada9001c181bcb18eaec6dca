@@ -1,0 +1,17 @@
+package com.dao;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.bean.Employee;
+
+@Repository
+public class EmployeeDao {
+	
+	@Autowired
+	SessionFactory sf;
+	
+	public int storeEmployee(Employee emp)
+
+}

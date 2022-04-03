@@ -1,0 +1,22 @@
+package com;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MyController {
+
+	@RequestMapping(value = "/")
+	public String sayHello() {
+		System.out.println("I Came Here");
+		return "index";
+	}
+	@RequestMapping(value = "/open")
+	public String openPage() {
+		
+		return "login";
+
+	}
+	@RequestMapping(value = "/checkuser")
+	
+}

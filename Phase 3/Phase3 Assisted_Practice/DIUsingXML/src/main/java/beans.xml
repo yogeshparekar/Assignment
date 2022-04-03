@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+<bean class="com.Employee" id="emp1" scope="singleton"> </bean> <!--singleton is ByDefault (No memory create)-->
+
+<bean class="com.Employee" id="emp2" scope="prototype"> </bean> <!--prototype means create multiple object(memory create)-->
+
+<bean class="com.Employee" id="emp3">
+	<constructor-arg value="100"></constructor-arg>
+	<constructor-arg value="Ramesh"></constructor-arg>
+	<constructor-arg value="12000"></constructor-arg>
+</bean>
+
+<bean class="com.Employee" id="emp4">
+	<property name="id" value="101"></property>
+	<property name="name" value="Ajay"></property>
+	<property name="salary" value="15000"></property>
+</bean>
+
+<!-- Address add -->
+<bean class="com.Employee" id="employee" autowire="byName">
+	<property name="id" value="123"></property>
+	<property name="name" value="Mahesh"></property>
+	<property name="salary" value="25000"></property>
+	<!-- <property name="add" ref="address"></property>  -->
+</bean>
+
+<bean class="com.Address" id="add">
+	<property name="city" value="Pune"></property>
+	<property name="state" value="Maharathstra"></property>
+</bean>
+
+<bean class="com.Address" id="localadd">
+	<property name="city" value="Banglore"></property>
+	<property name="state" value="Karnatak"></property>
+</bean>
+</beans>
